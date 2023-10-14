@@ -1,0 +1,1272 @@
+<!-- /layout.antlers.html -->
+<!DOCTYPE html>
+<html lang="en" class="antialiased js-focus-visible" data-js-focus-visible=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="preload" as="style" href="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/site-e25af41d.css"><link rel="modulepreload" href="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/site-45ae25f6.js"><link rel="stylesheet" href="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/site-e25af41d.css"><script type="module" src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/site-45ae25f6.js"></script>
+        
+
+<!-- statamic-peak-seo::snippets/_seo.antlers.html -->
+
+<title>
+    
+    
+    
+        How to Use Git/GitHub with R - R for the Rest of Us
+    
+</title>
+
+
+
+    <meta name="description" content="Using Git and GitHub alongside RStudio has the power to revolutionize how you work in R. But getting everything set up can be a challenge. Join me as I walk through everything you need to do in order to use Git and GitHub alongside RStudio.">
+
+
+
+
+   
+
+
+
+
+    
+        
+            <link rel="alternate" hreflang="en-US" href="https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r">
+        
+    
+
+
+
+
+    
+        <link rel="canonical" href="https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r">
+    
+
+
+
+
+
+
+
+   <script type="application/ld+json" id="schema">
+       
+           {
+               "@context": "http://schema.org",
+               "@type": "Organization",
+               "name": "R for the Rest of Us",
+               "url": "https://rfortherestofus.com/"
+           }
+       
+   </script>
+
+
+
+
+
+
+   <script type="application/ld+json">
+       {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+               {
+                       "@type": "ListItem",
+                       "position": 1,
+                       "name": "Home",
+                       "item": "https://rfortherestofus.com"
+                   } ,{
+                       "@type": "ListItem",
+                       "position": 2,
+                       "name": "How to Use Git/GitHub with R",
+                       "item": "https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r"
+                   } 
+           ]
+       }
+   </script>
+
+
+
+<meta property="og:site_name" content="R for the Rest of Us">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+
+    <meta property="og:title" content="How to Use Git/GitHub with R">
+
+
+    <meta property="og:description" content="Using Git and GitHub alongside RStudio has the power to revolutionize how you work in R. But getting everything set up can be a challenge. Join me as I walk through everything you need to do in order to use Git and GitHub alongside RStudio.">
+
+
+    <meta property="og:image" content="https://rfortherestofus.com/img/containers/social_images/2021/02/how-to-use-git-with-r.png/2df0e54d6ec234649c20336c6147ec96.png">
+
+
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="rfortherest">
+    
+        <meta name="twitter:title" content="How to Use Git/GitHub with R">
+   
+   
+        <meta name="twitter:description" content="Using Git and GitHub alongside RStudio has the power to revolutionize how you work in R. But getting everything set up can be a challenge. Join me as I walk through everything you need to do in order to use Git and GitHub alongside RStudio.">
+   
+   
+        <meta name="twitter:image" content="https://rfortherestofus.com/img/containers/social_images/2021/02/how-to-use-git-with-r.png/caccd7170c2923b788ec50a3a2cff859.png">
+        
+            
+        
+   
+
+
+
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+        <script src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/script.js" site="UGSOJXYS" defer="defer"></script>
+    
+
+    
+
+    
+
+<!-- End: statamic-peak-seo::snippets/_seo.antlers.html -->
+
+
+        <!-- /snippets/_browser_appearance.antlers.html -->
+
+
+
+
+
+    <meta name="theme-color" content="#6CABDD">
+    
+
+
+
+    
+    <link rel="icon" href="https://rfortherestofus.com/favicons/rru-logo-blue-square-75w.svg" type="image/svg+xml">
+
+    
+    
+        <link rel="icon" href="https://rfortherestofus.com/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" href="https://rfortherestofus.com/favicons/favicon-32x32.png" sizes="32x32">
+    
+
+
+
+<link rel="manifest" href="https://rfortherestofus.com/site.webmanifest">
+
+
+
+<!-- End: /snippets/_browser_appearance.antlers.html -->
+
+        
+    <script src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/embed-player.min.js"></script>
+
+    <script src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/embed-player.min.js"></script>
+
+    <script src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/embed-player.min.js"></script>
+
+    <script src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/embed-player.min.js"></script>
+
+    <script src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/embed-player.min.js"></script>
+
+    <script src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/embed-player.min.js"></script>
+
+    <script src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/embed-player.min.js"></script>
+
+    <script src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/embed-player.min.js"></script>
+
+    <script src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/embed-player.min.js"></script>
+
+    <script src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/embed-player.min.js"></script>
+
+    <script src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/embed-player.min.js"></script>
+
+    </head>
+    <body class="bg-white selection:bg-primary selection:text-white bg-grid">
+        <!-- statamic-peak-tools::snippets/_noscript.antlers.html -->
+
+    <noscript>
+        <style>
+            nav.hidden,
+            nav ul [x-cloak],
+            nav ul li ul {
+                display: block !important;
+            }
+        </style>
+        <p class="relative z-50 py-3 px-4 bg-gray-100 border-b border-gray-200 text-center font-bold text-xs text-gray-600">This website requires Javascript for some parts to function properly. Your experience may vary.</p>
+    </noscript>
+
+<!-- End: statamic-peak-tools::snippets/_noscript.antlers.html -->
+
+        <!-- statamic-peak-tools::navigation/_skip_to_content.antlers.html -->
+<a class="fixed z-50 px-4 py-2 text-sm font-bold text-white -translate-y-24 opacity-0 top-4 left-8 bg-primary focus-visible:translate-y-0 focus-visible:opacity-100 focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2 motion-safe:transition-transform" href="#content">
+    Skip to content
+</a>
+<!-- End: statamic-peak-tools::navigation/_skip_to_content.antlers.html -->
+
+        <!-- statamic-peak-tools::components/_toolbar.antlers.html -->
+
+<!-- End: statamic-peak-tools::components/_toolbar.antlers.html -->
+
+        
+
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+
+    
+        <div class="bg-primary w-full">
+            <div class="max-w-6xl mx-auto py-3 text-white text-center font-semibold text-lg">
+                New course alert! 🚨🚨 <a href="https://rfortherestofus.com/courses/tables">Making Beautiful Tables with R</a>
+            </div>
+        </div>
+    
+
+
+        <!-- /layout/_header.antlers.html -->
+<header x-data="{ mobileNavOpen: false, accountDropdownOpen: false }" class="relative">
+    <div class="fluid-container py-2 md:py-4 flex items-center justify-between">
+        <a class="flex-shrink-0" aria-label="R for the Rest of Us" href="https://rfortherestofus.com/">
+            <img src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/rru-logo-blue-square.png" class="select-none w-[55px] md:w-[75px]" alt="R for the Rest of Us Logo">
+        </a>
+
+        <nav class="hidden md:block">
+            <ul class="flex flex-wrap items-center space-x-8 px-4">
+                
+                    <li>
+                        <a class="
+                                text-[#404E6B] hover:text-primary
+                                
+                            " href="https://rfortherestofus.com/courses">
+                            Courses
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="
+                                text-[#404E6B] hover:text-primary
+                                
+                            " href="https://rfortherestofus.com/3months">
+                            R in 3 Months
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="
+                                text-[#404E6B] hover:text-primary
+                                
+                            " href="https://rfortherestofus.com/training">
+                            Training
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="
+                                text-[#404E6B] hover:text-primary
+                                
+                            " href="https://rfortherestofus.com/consulting">
+                            Consulting
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="
+                                text-[#404E6B] hover:text-primary
+                                
+                            " href="https://rfortherestofus.com/blog">
+                            Blog
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="
+                                text-[#404E6B] hover:text-primary
+                                
+                            " href="https://rfortherestofus.com/about">
+                            About
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="
+                                text-[#404E6B] hover:text-primary
+                                
+                            " href="https://rfortherestofus.com/contact">
+                            Contact
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="
+                                text-[#404E6B] hover:text-primary
+                                
+                            " href="https://rfortherestofus.com/email">
+                            Newsletter
+                        </a>
+                    </li>
+                
+            </ul>
+        </nav>
+
+        <div class="flex items-center space-x-6 md:space-x-10 flex-shrink-0">
+            <a class="hover:text-primary" href="https://rfortherestofus.com/cart">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 43 40" class="w-[30px]">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1.688 1.25h2.887c1.063 0 1.99.715 2.265 1.74l.798 2.993m0 0c11.605-.325 23.2.965 34.45 3.834a124.127 124.127 0 0 1-6.092 14.87H12.625M7.638 5.983l4.987 18.704m0 0a6.25 6.25 0 0 0-6.25 6.25h32.813M9.5 37.188a1.563 1.563 0 1 1-3.126 0 1.563 1.563 0 0 1 3.126 0Zm26.563 0a1.563 1.563 0 1 1-3.126 0 1.563 1.563 0 0 1 3.126 0Z"></path>
+                </svg>
+            </a>
+
+            
+
+            
+                <a class="hidden md:block font-medium text-[#404E6B] hover:text-primary" href="https://rfortherestofus.com/login">
+                    Sign in
+                </a>
+            
+
+            <button class="md:hidden hover:text-primary" aria-label="Toggle menu" @click="mobileNavOpen = true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    
+    <div x-show="mobileNavOpen" class="md:hidden w-full h-screen fixed bg-white top-0 z-10" style="display: none;">
+        <div class="fluid-container py-2 flex items-center justify-between">
+            <a class="flex-shrink-0" aria-label="R for the Rest of Us" href="https://rfortherestofus.com/">
+                <img src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/rru-logo-blue-square.svg" class="select-none w-[55px] md:w-[75px]" alt="R for the Rest of Us Logo">
+            </a>
+
+            <button class="md:hidden hover:text-primary" aria-label="Toggle menu" @click="mobileNavOpen = false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="fluid-container">
+            <ul class="flex flex-col">
+                
+                    <li class="space-x-8">
+                        <a class="text-[#404E6B] hover:text-primary w-full py-2 block" href="https://rfortherestofus.com/courses">Courses</a>
+                    </li>
+                
+                    <li class="space-x-8">
+                        <a class="text-[#404E6B] hover:text-primary w-full py-2 block" href="https://rfortherestofus.com/3months">R in 3 Months</a>
+                    </li>
+                
+                    <li class="space-x-8">
+                        <a class="text-[#404E6B] hover:text-primary w-full py-2 block" href="https://rfortherestofus.com/training">Training</a>
+                    </li>
+                
+                    <li class="space-x-8">
+                        <a class="text-[#404E6B] hover:text-primary w-full py-2 block" href="https://rfortherestofus.com/consulting">Consulting</a>
+                    </li>
+                
+                    <li class="space-x-8">
+                        <a class="text-[#404E6B] hover:text-primary w-full py-2 block" href="https://rfortherestofus.com/blog">Blog</a>
+                    </li>
+                
+                    <li class="space-x-8">
+                        <a class="text-[#404E6B] hover:text-primary w-full py-2 block" href="https://rfortherestofus.com/about">About</a>
+                    </li>
+                
+                    <li class="space-x-8">
+                        <a class="text-[#404E6B] hover:text-primary w-full py-2 block" href="https://rfortherestofus.com/contact">Contact</a>
+                    </li>
+                
+                    <li class="space-x-8">
+                        <a class="text-[#404E6B] hover:text-primary w-full py-2 block" href="https://rfortherestofus.com/email">Newsletter</a>
+                    </li>
+                
+
+                
+
+                
+                    <li class="space-x-8">
+                        <a class="text-[#404E6B] hover:text-primary w-full px-4 py-2 block" href="https://rfortherestofus.com/login">Sign in</a>
+                    </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- End: /layout/_header.antlers.html -->
+
+
+        <main class="relative overflow-x-hidden">
+            <section class="relative">
+    <div class="max-w-4xl mx-auto px-6 lg:px-0 py-8 md:py-16  pb-0 ">
+        <div class="flex flex-col gap-y-6 max-w-2xl">
+            <!-- /typography/_h1.antlers.html -->
+<h1 class="text-3xl md:text-4xl font-bold leading-tight text-blue-800 text-[#404e6b] md:text-5xl !leading-tight">How to Use Git/GitHub with R</h1>
+<!-- End: /typography/_h1.antlers.html -->
+
+
+            
+        </div>
+
+        
+            <div class="w-full mt-8 md:mt-12 z-50 relative rounded-lg">
+                <img class="w-full h-full object-cover rounded-lg" src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/how-to-use-git-with-r.png" alt="">
+            </div>
+        
+    </div>
+
+    
+        <div class="absolute bottom-0 bg-white h-20 w-full z-10"></div>
+    
+</section>
+
+<article class="max-w-4xl mx-auto pb-12 px-6 lg:px-0">
+    <div class="border-b py-4 mb-6 md:mb-12">
+        
+
+        <div class="flex flex-row items-center justify-between">
+            <div class="flex items-center">
+                
+                    <img class="rounded-full h-12 w-12 mr-4" src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/671eecae794b1ef3f02181f6b1cb4a79.jpeg" alt="David Keyes">
+                    <span class="font-semibold">David Keyes</span>
+                
+            </div>
+
+            <div class="md:border-l md:pl-4 py-2">
+                <span class="font-mono text-sm text-gray-600">February 13th, 2021</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-y-6 md:gap-y-0 md:gap-x-10">
+        <div class="flex flex-row md:flex-col items-center gap-x-3 md:gap-x-0 md:gap-y-6">
+            <a class="border p-2 rounded-full" href="https://twitter.com/share?text=How+to+Use+Git/GitHub+with+R&amp;url=https%3A//rfortherestofus.com/2021/02/how-to-use-git-github-with-r" target="_blank" title="Share on Twitter">
+                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20"> <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"></path> </svg>
+            </a>
+
+            <a class="border p-2 rounded-full" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//rfortherestofus.com/2021/02/how-to-use-git-github-with-r%2F&amp;t=How+to+Use+Git/GitHub+with+R" target="_blank" title="Share on Facebook">
+                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"> <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path> </svg>
+            </a>
+
+            <a class="border p-2 rounded-full" href="https://www.linkedin.com/shareArticle?url=https%3A//rfortherestofus.com/2021/02/how-to-use-git-github-with-r%2F&amp;title=How+to+Use+Git/GitHub+with+R" target="_blank" title="Share on LinkedIn">
+                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path> </svg>
+            </a>
+        </div>
+
+        <div class="w-full md:pr-20">
+            <div class="space-y-8 mb-12">
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <hr><p><strong>This blog post has gotten so much interest that I’ve turned it into a full-length course. <a href="https://rfortherestofus.com/courses/git-github/">Check it Out</a></strong></p><p>Using
+ Git and GitHub alongside RStudio has the power to revolutionize how you
+ work in R. But getting everything set up can be a challenge. Join me as
+ I walk through everything you need to do in order to use Git and GitHub
+ alongside RStudio.</p><p>But first, some background ...</p><h2>What is Git? What is GitHub?</h2><p>I
+ remember when I was starting out learning R, Git and GitHub were things
+ I had heard about, but only vaguely understood. I had a sense that they
+ were about collaboration and sharing code, but beyond that … 🤷</p><p>So … what are Git and GitHub? First of all, they are two separate things:</p><ol><li><p><a target="_blank" href="https://en.wikipedia.org/wiki/Git" title="Opens in a new window">Git is open source software for version control</a>. Using Git, you can do things like see all previous versions of code you’ve ever created in a project.</p></li><li><p><a target="_blank" href="https://github.com/" title="Opens in a new window">GitHub</a> is the most popular service (others include <a target="_blank" href="https://gitlab.com/" title="Opens in a new window">GitLab</a> and <a target="_blank" href="https://bitbucket.org/product" title="Opens in a new window">BitBucket</a>) for collaborating on code using Git.</p></li></ol><p>It’s
+ possible to use Git without using GitHub, though most people combine 
+the two. Being able to have a record of all of the changes you’ve ever 
+made to your code both locally and on a remote website is powerful.</p><h2>Why Should I Use Git and GitHub?</h2><p>I have seen three major motivations for people to adopt a Git/GitHub workflow:</p><ol><li><p><strong>Using Git and GitHub serves as a backup</strong>.
+ Because GitHub has a copy of all of the code you have locally, if 
+anything were to happen to your computer, you’d still have access to 
+your code.</p></li><li><p><strong>Using Git and GitHub allows you to use version control.</strong>
+ Ever had documents called report-final.pdf, report-final-v2.pdf, and 
+report-final-v3.pdf? Yes, yes, you have. Instead of making copies of 
+files over fear of losing work, version control allows you to see what 
+you did in the past, all while keeping single versions of documents.</p></li><li><p><strong>Using Git and GitHub makes it possible to work on the same project at the same time as collaborators.</strong> Many of the <a href="https://rfortherestofus.com/custom-training/">teams I train that are learning R</a>
+ decide to switch to Git/GitHub after collaborating using Dropbox, 
+Google Drive, OneDrive, or the like. The problem they run into is that 
+only one person can work on an RStudio project shared in this way. Git 
+and GitHub have built-in tools that enable simultaneous asynchronous 
+work, a major benefit for those working in teams.</p></li></ol><p>The best resource I’ve found for understanding Git and GitHub comes from this 2016 talk (<a target="_blank" href="https://speakerdeck.com/alicebartlett/git-for-humans" title="Opens in a new window">slides here</a>) by Alice Bartlett of the Financial Times (hat tip to <a target="_blank" href="https://www.garrickadenbuie.com/" title="Opens in a new window">Garrick Aden-Buie of RStudio</a> for telling me about it).</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6">
+    <iframe src="How%20to%20Use%20Git_GitHub%20with%20R%20-%20R%20for%20the%20Rest%20of%20Us-Dateien/eWxxfttcMts.htm" class="aspect-video w-full"></iframe>
+</div>
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <p></p><h2>How to Set up Git</h2><p>Now that you have a bit more of 
+an understand of what Git and GitHub are, let's talk about how to set 
+everything up. Much of what I'll share comes from the excellent book <a href="http://happygitwithr.com/">Happy Git with R</a>
+ by Jenny Bryan and Jim Hester. However, at the time of writing 
+(February 2021), some things have changed with regard to credentials. I 
+lay out what I believe is the most up-to-date advice for getting 
+everything set up.</p><h3>Install Git</h3><p>The first step is to install Git. <a href="https://happygitwithr.com/install-git.html">Chapter 6 of Happy Git with R</a>
+ lays out the process for Mac, Windows, and Linux users. I'm on a Mac so
+ Git came pre-installed on my computer. I was able to verify that I had 
+Git installed using the terminal in RStudio.</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6 w-full">
+    <div>
+        <div class="muse-video-player" data-video="5ezFm62" data-width="100%" data-logo="0" data-ld="1"></div>
+    </div>
+
+    
+</div>
+
+
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <h3>Configure Git</h3><p>The next step is to configure Git. This is covered in <a target="_blank" href="https://happygitwithr.com/hello-git.html" title="Opens in a new window">Chapter 7 of Happy Git with R</a>, though I show what I believe to be a slightly easier process. Specifically, I suggest using the <code>edit_git_config()</code> function from the <code>usethis</code> package, which will open your <a target="_blank" href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup" title="Opens in a new window">gitconfig file</a>. Add your name and email and close this.</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6 w-full">
+    <div>
+        <div class="muse-video-player" data-video="JLaUt3v" data-width="100%" data-logo="0" data-ld="1"></div>
+    </div>
+
+    
+</div>
+
+
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <h4>Initialize a Git Repository</h4><p>Now that you’ve installed and configured Git, you can use it locally. The <code>use_git()</code>
+ function will add a Git repository (often referred to as a “repo”) to 
+an existing RStudio project. Here I’ll create a new project and then 
+initialize a Git repo.</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6 w-full">
+    <div>
+        <div class="muse-video-player" data-video="E1LijQk" data-width="100%" data-logo="0" data-ld="1"></div>
+    </div>
+
+    
+</div>
+
+
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <p></p><h4>View Commit History</h4><p>Now that my RStudio project 
+has an associated Git repository, I'll see an extra tab on the top 
+right: the Git tab. From here, I can see the entire history of changes 
+to my code over time (not many yet!).</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6 w-full">
+    <div>
+        <div class="muse-video-player" data-video="nmSMvsz" data-width="100%" data-logo="0" data-ld="1"></div>
+    </div>
+
+    
+</div>
+
+
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <h4>Make a Commit and View More History</h4><p>Git doesn't 
+automatically track changes the way a tool like Google Docs does. 
+Instead, you have to tell Git: I made changes and I want you to keep a 
+record of them. Telling Git this is called making a commit and you can 
+do it from within RStudio.</p><p>Each commit has a commit message, which
+ is helpful because, when you look at your code history, you see what 
+you did at each point in time (i.e. at each commit). RStudio has a 
+built-in tool to view your code history. You can click on any commit to 
+see what changed, relative to the previous commit. Lines in green were 
+added; lines in red were deleted.</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6 w-full">
+    <div>
+        <div class="muse-video-player" data-video="GrXBX2t" data-width="100%" data-logo="0" data-ld="1"></div>
+    </div>
+
+    
+</div>
+
+
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <h2>Connect RStudio and GitHub</h2><p>The process so far has enabled us to use Git locally. But what if we want to connect to GitHub? How do we do that?</p><h3>Sign up for GitHub</h3><p>The first step is to <a href="https://github.com/join">sign up for a (free) GitHub account</a>.</p><h3>Create a Personal Access Token (PAT) on GitHub</h3><p>Once
+ you’ve signed up, you’ll need to enable RStudio to talk to GitHub. The 
+process for doing so has recently changed (this is where I see the 
+largest major difference from Happy Git with R). The best way to connect
+ RStudio and GitHub is using your username and a Personal Access Token 
+(PAT). To generate a personal access token, use the <code>create_github_token()</code> function from <code>usethis</code>.
+ This will take you to the appropriate page on the GitHub website, where
+ you’ll give your token a name and copy it (don’t lose it because it 
+will never appear again!).</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6 w-full">
+    <div>
+        <div class="muse-video-player" data-video="evn3xvX" data-width="100%" data-logo="0" data-ld="1"></div>
+    </div>
+
+    
+</div>
+
+
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <h3>Store Personal Access Token to Connect RStudio and GitHub</h3><p>Now
+ that you’ve created a Personal Access Token, we need to store it so 
+that RStudio can access it and know to connect to your GitHub account. 
+The <code>gitcreds_set()</code> function from the <code>gitcreds</code> 
+package will help you here. You’ll enter your GitHub username and the 
+Personal Access Token as your password (NOT your GitHub password, as I 
+initially thought). Once you’ve done all of this, you have connected 
+RStudio to GitHub!</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6 w-full">
+    <div>
+        <div class="muse-video-player" data-video="NUGdUDd" data-width="100%" data-logo="0" data-ld="1"></div>
+    </div>
+
+    
+</div>
+
+
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <p></p><h2>How to Connect RStudio Projects with GitHub Repositories</h2><p>Now
+ that we've connected RStudio and GitHub, let's discuss how to make the 
+two work together. The basic idea is that you'll set up projects you 
+create in RStudio with associated GitHub repositories. Each RStudio 
+project lives in a single GitHub repo.</p><p>How do we connect an RStudio project to a GitHub repo? <a href="https://happygitwithr.com/usage-intro.html">Happy Git with R goes over three strategies</a>. I'll demonstrate two of them.</p><h3>RStudio First</h3><p>Sometimes you already have a project locally and you want to get it on GitHub. To do this, you’ll need to first use the <code>use_git()</code> function from <code>usethis</code>, as we did above. Then, you can use the <code>use_github()</code> function, which will create a GitHub repo and connect it to your current RStudio project.</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6 w-full">
+    <div>
+        <div class="muse-video-player" data-video="gDXVbnx" data-width="100%" data-logo="0" data-ld="1"></div>
+    </div>
+
+    
+</div>
+
+
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <h3>GitHub First</h3><p>The most straightforward way to use RStudio 
+and GitHub together is to create a repo on GitHub first. Create the 
+repo, then when you start a new project in RStudio, use the version 
+control option, enter your repo URL, and you're good to go.</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6 w-full">
+    <div>
+        <div class="muse-video-player" data-video="Way9iir" data-width="100%" data-logo="0" data-ld="1"></div>
+    </div>
+
+    
+</div>
+
+
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <p></p><h2>General Workflow</h2><p>Now that we've connected RStudio and GitHub, we can push and pull our work between the two.</p><h3>Push</h3><p>Pushing
+ means sending any changes in your code from RStudio to GitHub. To do 
+this, we first have to commit. After committing, we now have a push 
+button (the up arrow) on RStudio that we can use to send our code to 
+GitHub.</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6 w-full">
+    <div>
+        <div class="muse-video-player" data-video="UJmQE7i" data-width="100%" data-logo="0" data-ld="1"></div>
+    </div>
+
+    
+</div>
+
+
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <p></p><h3>Pull</h3><p>The opposite of pushing is pulling. Using the
+ down arrow button, RStudio goes to the GitHub repo, grabs the most 
+recent code and brings it into your local editor. (<a href="https://medium.com/better-programming/six-rules-for-good-git-hygiene-5006cf9e9e2#:~:text=Always%20Pull%20Before%20a%20Push&amp;text=Before%20you%20try%20to%20push,sync%20with%20the%20remote%20repository.">Pulling regularly is extremely important if you're collaborating</a>,
+ though if you're the only one working on an RStudio project and 
+associated GitHub repo, you know your local code matches what's on 
+GitHub so it's less important.)</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6 w-full">
+    <div>
+        <div class="muse-video-player" data-video="zeX4M3M" data-width="100%" data-logo="0" data-ld="1"></div>
+    </div>
+
+    
+</div>
+
+
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <h2>You Did It!</h2><p>You're now all set up to use Git and GitHub with RStudio!</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    <div class="mb-6">
+    <figure class="wp-block-embed is-type-photo is-provider-giphy wp-block-embed-giphy">
+<div class="wp-block-embed__wrapper">
+https://giphy.com/gifs/filmeditor-high-five-sacha-baron-cohen-l0ErFafpUCQTQFMSk
+</div>
+</figure>
+<p>
+</p></div>
+
+                
+                    <!-- /typography/_prose.antlers.html -->
+<div class="
+        prose
+        prose-p:text-[#404e6b]
+        prose-li:marker:text-[#404e6b]
+        prose-a:text-primary
+        prose-a:underline-offset-2
+        focus:prose-a:outline-none
+        focus-visible:prose-a:ring
+        focus-visible:prose-a:ring-primary
+        focus-visible:prose-a:rounded-sm
+        prose-figure:my-0
+        prose-pre:whitespace-pre-wrap
+        max-w-none
+        max-w-full mb-6
+    ">
+    <p></p><h2>Learn More</h2><p>If you’re looking to learn more and I haven’t yet beat into you the idea that you should check out Happy Git with R, <a target="_blank" href="http://happygitwithr.com/" title="Opens in a new window">let me try it once more</a>. It’s the best book to help guide you as you go deeper with using Git/GitHub in your R work.</p><p>Additionally, <a target="_blank" href="https://rstudio-conf-2020.github.io/r-for-excel/github.html" title="Opens in a new window">materials from a 2019 rstudio::conf workshop</a>
+ titled “R for Excel Users” cover “version control and practice a 
+workflow with GitHub and RStudio that streamlines working with our most 
+important collaborator: Future You.”</p>
+</div>
+<!-- End: /typography/_prose.antlers.html -->
+
+
+                
+                    
+                
+            </div>
+
+            <section>
+                <!-- /typography/_h2.antlers.html -->
+<h2 class="text-2xl font-bold leading-tight text-neutral mb-6 font-semibold text-xl">Let us know what you think by adding a comment below.</h2>
+<!-- End: /typography/_h2.antlers.html -->
+
+
+                <section x-data="{
+        replyingTo: null,
+        replyTo(comment) {
+            this.replyingTo = comment
+            document.querySelector('#write-comment').scrollIntoView()
+        },
+    }" id="comments">
+    
+        <p class="mb-4">You need to be signed-in to comment on this post. <a class="text-primary no-underline font-semibold" href="https://rfortherestofus.com/login">Login</a>.</p>
+    
+
+    
+</section>
+
+
+
+            </section>
+        </div>
+    </div>
+</article>
+
+        </main>
+
+        <!-- /layout/_footer.antlers.html -->
+<footer class="bg-white border-t" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <div class="fluid-container pb-8 pt-10 md:pt-20">
+        
+            <div class="flex flex-col md:flex-row justify-between space-y-10 md:space-y-0 md:gap-6">
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold leading-6 text-gray-900 pl-1 md:pl-3">Courses</h3>
+                    <ul role="list" class="mt-2 md:mt-6">
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/3months" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    R in 3 Months
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/courses/getting-started-v1" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Getting Started with R
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/courses/fundamentals" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Fundamentals of R
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/courses/going-deeper" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Going Deeper with R
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/courses/glamour" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    The Glamour of Graphics
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/courses/git-github" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Using Git and GitHub with R
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/courses/mapping" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Mapping with R
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/courses/data-cleaning" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Data Cleaning with R
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/courses/package-development" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Package Development with R
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/courses/inferential-statistics" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Inferential Statistics with R
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold leading-6 text-gray-900 pl-1 md:pl-3">Other Ways to Learn</h3>
+                    <ul role="list" class="mt-2 md:mt-6">
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/blog" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Blog
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rwithoutstatistics.com/" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    " target="_blank" rel="noopener">
+                                    R Without Statistics Book
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/podcast" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Podcast
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/email" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Newsletter
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold leading-6 text-gray-900 pl-1 md:pl-3">For Organizations</h3>
+                    <ul role="list" class="mt-2 md:mt-6">
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/training" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Training
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/consulting" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Consulting
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold leading-6 text-gray-900 pl-1 md:pl-3">About</h3>
+                    <ul role="list" class="mt-2 md:mt-6">
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/about" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    About
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://rfortherestofus.com/contact" class="
+                                        text-sm leading-6 p-1 md:py-2 md:px-3 hover:rounded-md block rounded-md
+                                        text-gray-600 hover:bg-[#FBFBFC]
+                                    ">
+                                    Contact
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="mt-6 md:mt-16 pt-8 md:flex md:items-center md:justify-between">
+            <div class="flex space-x-6 md:order-2 px-1 md:px-3 items-center">
+                
+                
+
+                
+                    
+                        <a href="mailto:david@rfortherestofus.com" class="text-gray-400 hover:text-gray-500" rel="noopener" aria-label="R for the Rest of Us on Email" target="_blank">
+                            <span class="sr-only">email</span>
+                            <svg class="h-5 w-5 fill-current" aria-hidden="true" viewBox="0 0 512 512"><path d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400c0 26.5 21.49 48 48 48h416c26.51 0 48-21.49 48-48V173.2L303.2 335.7C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112c0-26.51-21.5-48-48-48H48C21.49 64 0 85.49 0 112c0 13 6.01 25.3 16.29 33.3z"></path></svg>
+                        </a>
+                    
+                        <a href="https://www.linkedin.com/dgkeyes" class="text-gray-400 hover:text-gray-500" rel="noopener" aria-label="R for the Rest of Us on Linkedin" target="_blank">
+                            <span class="sr-only">linkedin</span>
+                            <svg class="h-5 w-5 fill-current" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path> </svg>
+                        </a>
+                    
+                        <a href="https://www.twitter.com/rfortherest" class="text-gray-400 hover:text-gray-500" rel="noopener" aria-label="R for the Rest of Us on Twitter" target="_blank">
+                            <span class="sr-only">twitter</span>
+                            <svg class="h-5 w-5 fill-current" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"> <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"></path> </svg>
+                        </a>
+                    
+                
+            </div>
+            <p class="mt-8 text-sm leading-5 text-gray-500 md:order-1 md:mt-0 px-1 md:px-2">
+                © 2023
+                
+                R for the Rest of Us
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- End: /layout/_footer.antlers.html -->
+
+
+        
+    
+
+
+</body></html>
+<!-- End: /layout.antlers.html -->
